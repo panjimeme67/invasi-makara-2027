@@ -1,0 +1,3 @@
+export type JalurSeleksi = "SNBP" | "SNBT" | "SIMAK" | "TS" | "PPKB";
+export interface Alumni { id:string; nama:string; tahunLulusSMA?:number; tahunMasukUI:number; fakultasSlug:string; programStudi:string; jalurSeleksi:JalurSeleksi; bio?:string; fotoUrl?:string; }
+export interface Fakultas { slug:string; nama:string; singkatan:string; deskripsi?:string; sejarah?:string; budaya?:string; funFacts:string[]; pencapaian:string[]; programStudi:string[]; prospekKerja:string[]; warna?:string; gambarUrl?:string; }
