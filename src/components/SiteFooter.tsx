@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function SiteFooter(){return <footer className="site-footer"><div className="footer-inner"><div><div className="footer-brand">INVASI MAKARA</div><p>Berbagi cerita, membuka wawasan, menginspirasi langkah menuju Universitas Indonesia.</p></div><div className="footer-links"><Link href="/tentang">Tentang</Link><Link href="/alumni">Alumni</Link><Link href="/fakultas">Fakultas</Link></div><small>© {new Date().getFullYear()} Invasi Makara.</small></div></footer>;}
