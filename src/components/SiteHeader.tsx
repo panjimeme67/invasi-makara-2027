@@ -1,0 +1,4 @@
+"use client";
+import Link from "next/link"; import {useState} from "react"; import {Menu,X} from "lucide-react";
+const links=[["/","Beranda"],["/tentang","Tentang"],["/alumni","Alumni"],["/statistik","Statistik"],["/fakultas","Fakultas"]];
+export default function SiteHeader(){const [open,setOpen]=useState(false);return <header className="site-header"><div className="nav-wrap"><Link className="brand" href="/"><span className="brand-mark">IM</span><span>INVASI <b>MAKARA</b><small>SMAN 8 JAKARTA × UI</small></span></Link><nav className={open?"nav-links is-open":"nav-links"}>{links.map(([href,label])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}</nav><button className="menu-toggle" aria-label="Toggle navigation" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></div></header>;}
